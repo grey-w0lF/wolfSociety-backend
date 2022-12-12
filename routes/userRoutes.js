@@ -12,7 +12,7 @@ const {
 
 router.post("/register", registerUser);
 router.post("/login", loginUser);
-router.get("/all", protect.protect, getAllUsers);
+router.get("/all", getAllUsers);
 router.get("/user/details/:cardid", getUser);
 router.delete("/user/remove/:cardid", protect.protect, removeUser);
 module.exports = router;
